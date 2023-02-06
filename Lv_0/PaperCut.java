@@ -1,3 +1,5 @@
+package Lv_0;
+
 // 프로그래머스 Lv_0 종이 자르기 
 public class PaperCut {
     public static void main(String[] args){

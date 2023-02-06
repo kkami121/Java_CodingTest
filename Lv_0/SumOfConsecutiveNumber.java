@@ -13,7 +13,7 @@ public class SumOfConsecutiveNumber {
             for(int j = i; j < (i + num); j++){
                 sum += j;
                 answer[index++] = j;
-            }å
+            }
             if(sum == total){
                 break;
             }
