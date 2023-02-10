@@ -1,10 +1,9 @@
 package Lv_0;
 // 프로그래머스 LV_0 옹알이
-
 public class Babbling {
     public static void main(String[] args){
         int answer = 0;
-        String[] babbling = {"ayaye", "uuuma", "ye", "yemawoo", "ayaa"};
+        String[] babbling = {"aya", "yee", "u", "maa", "wyeoo"};
 
         String[] originalbabblingList = {"aya", "ye", "woo", "ma"};
         String[] repeatbabblingList = {"ayaaya", "yeye", "woowoo", "mama"};
@@ -23,7 +22,7 @@ public class Babbling {
             int check = 0;
         
             for(int i = 0; i < bab.length(); i++){
-                if(!bab.subSequence(i, i + 1).equals("?")){// 모든 문자가 ?로 치환되지 않는 경우를 check
+                if(!bab.substring(i, i + 1).equals("?")){// 모든 문자가 ?로 치환되지 않는 경우를 check
                     check = 1;
                     break;
                 }
@@ -40,5 +39,5 @@ public class Babbling {
 Tip
 1. for(a : b)를 통해 in처럼 a에 b를 하나씩 담을 수 있다
 2. s.replace("a", "b")를 통해 문자열 s안에서 "a"를 "b"로 치환
-3. s.subSequence를 통해서 모든 문자열이 ?으로 변환 되었는지 확인 후 count
+3. s.subSequence(index, index)는 인덱스 사이 값을 반환한다. substring을 사용해도 된다.
 */
