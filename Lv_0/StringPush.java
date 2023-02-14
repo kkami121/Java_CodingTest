@@ -50,7 +50,7 @@ Tip
     String B = "lohel";
 
     String tempB = B.repeat(3);  // 3번 반복
-                                       // ex) B = "lohel"일 경우 tempB = "lohellohellohel"
+                                 // ex) B = "lohel"일 경우 tempB = "lohellohellohel"
     tempB.indexOf(A); // lohel lohel lohel 중 A가 해당되기 시작하는 인덱스 반환
                       // 시작할 위치는 0을 반환
                       // 없는 경우 -1을 반환
