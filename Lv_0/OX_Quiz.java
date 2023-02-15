@@ -1,5 +1,5 @@
 package Lv_0;
-
+// 프로그래머스 Lv_0 OX퀴즈
 public class OX_Quiz {
     public static void main(String[] args){
         String[] quiz = {"3 - 4 = -3", "5 + 6 = 11"};
