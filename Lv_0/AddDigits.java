@@ -46,4 +46,3 @@ Tip
 //         System.out.println(Arrays.stream(String.valueOf(n).split("")).mapToInt(Integer::parseInt).sum());
 //     }
 // }
-
