@@ -1,3 +1,4 @@
+package Lv_0;
 // 프로그래머스 Lv_0 연속된 수의 합(다른 풀이)
 public class SumOfConsecutiveNumber2 {
     public static void main(String[] args){
