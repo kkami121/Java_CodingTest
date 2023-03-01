@@ -1,6 +1,5 @@
 package Lv_0;
 // 프로그래머스 Lv_0 n의 배수 고르기
-
 public class PickOfMultiple_n{
     public static void main(String[] args){
         int n = 3;
