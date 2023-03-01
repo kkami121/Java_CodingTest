@@ -1,20 +1,45 @@
-package Lv_0;
+// 배열리스트 연습 
+// 정수형으로 사용하는법
+// 문자열은 어떻게 사용하는지
+// 출력할 때 배열로 다시 변환해야 하는데
+// 일반 system출력은 리스트로 가능 하지만 함수에서 return할 때는 다시 배열로 해야함
 
+
+package Lv_0;
+import java.util.*;
 public class test {
     public static void main(String[] args){
-        String A = "hello";
-        String B = "lohel";
+        int n = 24;
 
-        String tempB = B.repeat(3);  // 3번 반복
-                                           // ex) B = "lohel"일 경우 tempB = "lohellohellohel"
-        tempB.indexOf(A); // lohel lohel lohel 중 A가 해당되기 시작하는 인덱스 반환
-                          // 시작할 위치는 0을 반환
-                          // 없는 경우 -1을 반환
-                          // ex)  012 
-                          //        hello
-                          //      lohellohelohel
-                          // 2인덱스에서 시작함으로 2를 반환
-        System.out.println(tempB.indexOf(A));
+        ArrayList<Integer> answer = new ArrayList<>();
+        
+        for(int i = 1; i <= n; i++){
+            if(n % i == 0){
+                answer.add(i);
+            }
+        }
+        System.out.println(answer.stream().mapToInt(x -> x).toArray());// int 배열로 변환
     }
 }
 
+
+/*
+import java.util.*;
+
+class Solution {
+    public String[] solution(String my_str, int n) {
+        
+        List<String> answer = new ArrayList<>();
+        String str = "";
+        for(int i=0; i<my_str.length(); i++){
+            str += my_str.charAt(i);
+            if(str.length() == n || i == my_str.length()-1){
+                answer.add(str);
+                str = "";
+            }
+        }
+
+        return answer.stream().map(s -> s).toArray(String[]::new); // 문자열 배열로 반환
+    }
+}
+ */

@@ -16,6 +16,7 @@ public class Measure {
         // answer.stream().map(s -> s).toArray(String[]::new); // 문자열 배열로 반환
     }
 }
+//다른풀이
 /*
 class Solution {
     public int[] solution(int n) {
