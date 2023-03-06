@@ -8,6 +8,7 @@ public class SortString_2 {
 
         my_string = my_string.toLowerCase(); // 소문자로 변경 
                                              // 대문자 변경은 my_string.toUpperCase()
+        // 문자열 정렬하기
         char[] StringtoChar = my_string.toCharArray(); // char 배열에 넣게
         Arrays.sort(StringtoChar); // 정렬
         String SortedString = new String(StringtoChar); // 다시 String으로
