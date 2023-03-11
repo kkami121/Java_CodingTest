@@ -19,9 +19,12 @@ public class UpperAndLower {
         System.out.println(answer);
     }
 }
-// string을 string 배열로
-// string을 char 배열로
-// char배열을 string으로
+/*
+Tip
+1. string을 string 배열로 String[] s_char = string.split("");
+2. string을 char 배열로 char[] char = string.toCharArray();
+3. char배열을 string으로 String answer = new String(string);
 
-// string 일 때 대소문자 변환
-// char 일 때 대소문자 변환
+4. string 일 때 대소문자 변환 string = string.toUpperCase(), string.toLowerCase()
+5. char 일 때 대소문자 변환 char = Character.toUpperCase(char), Character.toLowerCase(char)
+ */
