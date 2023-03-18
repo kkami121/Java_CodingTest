@@ -28,3 +28,17 @@ Tip
 4. string 일 때 대소문자 변환 string = string.toUpperCase(), string.toLowerCase()
 5. char 일 때 대소문자 변환 char = Character.toUpperCase(char), Character.toLowerCase(char)
  */
+
+ /*
+다른 풀이
+
+for(int i=0; i<my_string.length(); i++){
+    char c = my_string.charAt(i); // 배열로 안넣어도 되는구나...
+    if(Character.isUpperCase(c)){
+        answer += String.valueOf(c).toLowerCase();
+    }else{
+        answer += String.valueOf(c).toUpperCase();
+    }
+}
+return answer;
+*/

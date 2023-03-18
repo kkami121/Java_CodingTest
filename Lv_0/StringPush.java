@@ -35,7 +35,7 @@ public class StringPush {
 }
 /*
 Tip
-1. .substring(index)을 통해 문자열의 해당 인덱스 값을 반환할 수 있다.
+1. .substring(index)을 통해 문자열의 해당 인덱스부터 끝까지 문자열의 값을 반환할 수 있다.
 2. .substring(0, index)을 통해서 0부터 index까지 문자열을 반환할 수 있다.
 
 번외1. 문자열 자체의 인덱스는 .charAt(index)를 통해서 반환받을 수 있다.
