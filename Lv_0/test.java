@@ -9,16 +9,13 @@ package Lv_0;
 import java.util.*;
 public class test {
     public static void main(String[] args){
-        int n = 24;
+        String my_string = "people";
+        String answer = "";
 
-        ArrayList<Integer> answer = new ArrayList<>();
-        
-        for(int i = 1; i <= n; i++){
-            if(n % i == 0){
-                answer.add(i);
-            }
+        for(int i = 0; i < my_string.length(); i++){ // my_string을 char로 만들면서 반복문
+            System.out.println(my_string.indexOf(my_string.charAt(i)));
         }
-        System.out.println(answer.stream().mapToInt(x -> x).toArray());// int 배열로 변환
+        
     }
 }
 

@@ -23,20 +23,16 @@ public class FindNumber {
             }
         }
         System.out.println(result);
-        
-    
-        System.out.println(("0" + num).indexOf(String.valueOf(k)));
     }
 }
 // 다른풀이 
 // public class FindNumber {
 //     public static void main(String[] args){
-        
+
 //         int num = 29183;
 //         int k = 1;
 
 //         System.out.println(("0" + num).indexOf(String.valueOf(k)));
-
 //     }
 // }
 /*
