@@ -4,7 +4,7 @@ public class StringPush {
     public static void main(String[] args){
 
         String A = "apple";
-        String B = "elppa";
+        String B = "leapp";
         String temp = ""; // 변경 전 문자열을 담을 변수 초기화
         int count = 0;
 
@@ -17,8 +17,9 @@ public class StringPush {
                 temp = A;
 
                 A = A.substring(A.length() - 1) + temp; // A의 마지막 문자를 반환하여 기존 A를 넣은 temp를 더해 마지막 문자가 맨앞으로 오도록
+                    // e + apple
                 A = A.substring(0, A.length() - 1); // 0부터 마지막 문자를 제외한 값을 반환
-                
+                    // eapple에서 eappl까지만 
                 count++;
 
                 if(A.equals(B)){ // 문자열 밀기 후 A와 B가 같은 경우
@@ -38,7 +39,6 @@ Tip
 1. .substring(index)을 통해 문자열의 해당 인덱스부터 끝까지 문자열의 값을 반환할 수 있다.
 2. .substring(0, index)을 통해서 0부터 index까지 문자열을 반환할 수 있다.
 
-번외1. 문자열 자체의 인덱스는 .charAt(index)를 통해서 반환받을 수 있다.
 
 &&&전체적인 코드를 쉽게 이해할 수 있도록 최대한 풀어서 작성 중입니다.&&&
 &&&더 간결하게 줄일 수 있는 부분이 충분히 있으니 도전해보시는 것도 좋을 거 같습니다.&&&
