@@ -10,7 +10,8 @@ public class Babbling {
 
         for(String bab : babbling){ // 자바에서 :는 in과 같은 역할로 bab에 babbling을 하나씩 넣음
             for(String rbab : repeatbabblingList){ //조카가 낼 수 있는 발음은 한 번씩만 등장한다고 했으므로 반복되는 발음은 카운트 하지 않기 위해 예외처리
-                bab = bab.replace(rbab, "x"); 
+                bab = bab.replace(rbab, "x");
+                
             }
             for(String obab : originalbabblingList){
                 bab = bab.replace(obab, "?");
