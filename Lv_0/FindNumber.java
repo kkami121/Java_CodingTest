@@ -3,7 +3,7 @@ package Lv_0;
 public class FindNumber {
     public static void main(String[] args){
         int num = 29183;
-        int k = 1;
+        int k = 3;
 
         int length = (int)(Math.log10(num)+1); // 정수형 길이
         int[] answer = new int[length]; // 숫자를 찾기 위한 배열 선언

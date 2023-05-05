@@ -10,11 +10,8 @@ import java.util.*;
 public class test {
     public static void main(String[] args){
         String my_string = "people";
-        String answer = "";
-
-        for(int i = 0; i < my_string.length(); i++){ // my_string을 char로 만들면서 반복문
-            System.out.println(my_string.indexOf(my_string.charAt(i)));
-        }
+        
+        System.out.println(my_string.substring(1, 2));
         
     }
 }
